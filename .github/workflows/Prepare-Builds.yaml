@@ -3,10 +3,10 @@ on:
   push:
     paths:
       - 'oci/*/builds.y*ml'
-  pull_request:
+  pull_request_target:
     paths:
       - 'oci/*/builds.y*ml'
-
+  
 jobs:
   prepare-build-matrix:
     runs-on: ubuntu-22.04
